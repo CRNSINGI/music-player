@@ -11,4 +11,7 @@ function playPause(){
     if(ctrlIcon.classList.contains("fa-pause")){
         song.pause();
     }
+    else{
+        song.play();
+    }
 }
