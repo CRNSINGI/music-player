@@ -6,3 +6,9 @@ song.onloadedmetadata = function(){
     progress.max = song.duration;
     progress.value = song.currentTime;
 }
+
+function playPause(){
+    if(ctrlIcon.classList.contains("fa-pause")){
+        song.pause();
+    }
+}
