@@ -25,4 +25,10 @@ if(song.play()){
     setInterval(()=>{
         progress.value = song.currentTime;
     }, 500);
+
+}
+
+progress.onchange = function(){
+    song.play();
+    song.currentTime = progress.value;
 }
